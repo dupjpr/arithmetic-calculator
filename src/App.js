@@ -1,6 +1,6 @@
 import { Provider } from "react-redux";
 import Home from "./components/home/Home";
-import store from './store/store';
+import store from './redux/store/store';
 
 import './utilities/Normalize.scss';
 

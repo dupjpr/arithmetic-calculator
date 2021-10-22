@@ -1,9 +1,15 @@
-const KeyBoardArea = () => {
-  return ( 
+import GeneralKey from '../generalKey/GeneralKey';
+
+const KeyBoardArea = ({ data, theme }) => {
+
+  return (
     <div>
-      this is the keyboard area
+      {data.map((item) => <GeneralKey
+        keyLabel={item}
+        theme={theme}
+      />)}
     </div>
-   );
+  );
 }
- 
+
 export default KeyBoardArea;
